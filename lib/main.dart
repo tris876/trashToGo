@@ -1,13 +1,17 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:trash_to_go_app/login.dart';
 import 'package:trash_to_go_app/signup.dart';
+import 'package:trash_to_go_app/dashboard.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: DashBoard(),
     ),
   );
 }
@@ -69,8 +73,10 @@ class HomePage extends StatelessWidget {
                       minWidth: double.infinity,
                       height: 60,
                       onPressed: () {
-                        Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => SignupPage()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignupPage()));
                       },
                       color: Color(0xFFB2A9C41),
                       elevation: 0,

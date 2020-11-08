@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "185317810813",
+    "firebase_url": "https://trashtogofirebase.firebaseio.com",
+    "project_id": "trashtogofirebase",
+    "storage_bucket": "trashtogofirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185317810813:android:786302cecfa47a3ff84714",
+        "android_client_info": {
+          "package_name": "com.example.trash_to_go_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185317810813-aob2amojrjk5p80p90i7oviuaf12ah99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4PBvpQCaPyy3vIlO6Iq78WtarJfKuahc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185317810813-aob2amojrjk5p80p90i7oviuaf12ah99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
