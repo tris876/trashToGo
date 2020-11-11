@@ -41,6 +41,7 @@ class DashBoard extends StatelessWidget {
                          SizedBox(height: 20,),
                          
                          
+                      //---------------TRASH TYPE------------------------
                          SizedBox(height: 20,),
                          Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,9 +60,9 @@ class DashBoard extends StatelessWidget {
 
                                        ),
                                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                                     ),
-                                   ),
 
+                                        ),
+                                   ),
                                     SizedBox(height: 20,),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -81,25 +82,155 @@ class DashBoard extends StatelessWidget {
                                             ),
                                           ),
                                          ),
-                                         ],
-                                    )  
+                                        ],
+                                        )  
+                                    
+                                 ],
+                               ),
+                              ),
+
+                      //---------------INFORMATION DESK------------------------
+                                InkWell(
+                               onTap: (){},
+                               child: Column(
+                                 children: [
+                                   Container(
+                                     height: 140,
+                                     width: MediaQuery.of(context).size.width*0.43,
+                                     decoration: BoxDecoration(
+                                       color: Color(0xFFBE3FFCF),
+                                       image: DecorationImage(
+                                         image: AssetImage('assets/image/recycling.png'), ///imagine for box 1
+
+                                       ),
+                                       borderRadius: BorderRadius.all(Radius.circular(20)),
+
+                                        ),
+                                   ),
+                                    SizedBox(height: 20,),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        InkWell(
+                                          onTap: (){},
+                                          child: Container(
+                                            height: 40,
+                                            width: 170,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFFBE3FFCF),
+                                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                                              border: Border.all(color: Colors.black.withOpacity(0.3)),
+                                            ),
+                                            child: Center(
+                                              child: Text("Information Desk"),
+                                            ),
+                                          ),
+                                         ),
+                                        ],
+                                      ),
+                                 ],
+                               ),
+                              ),
+                           ],
+                         ),
+
+                        ////-------------REQUEST---------
+                                      SizedBox(height: 20,),  
+                                      Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          InkWell(
+                                            onTap: (){},
+                                            child: Column(
+                                              children: [
+                                                Container(
+                                                  height: 140,
+                                                  width: MediaQuery.of(context).size.width*0.43,
+                                                  decoration: BoxDecoration(
+                                                    color: Color(0xFFBE3FFCF),
+                                                    image: DecorationImage(
+                                                      image: AssetImage(""),
+                                                    ),
+                                                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                                                    
+                                                  ),
+                                                ),
+                                                SizedBox(height: 20,),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        InkWell(
+                                          onTap: (){},
+                                          child: Container(
+                                            height: 40,
+                                            width: 170,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFFBE3FFCF),
+                                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                                              border: Border.all(color: Colors.black.withOpacity(0.3)),
+                                            ),
+                                            child: Center(
+                                              child: Text("Request"),
+                                            ),
+                                          ),
+                                         ),
+                                        ],
+                                        )  
+                                              ],
+                                            )
+                                            
+                                          ),
+
+                                            //////----REPORT--------
+                                          InkWell(
+                               onTap: (){},
+                               child: Column(
+                                 children: [
+                                   Container(
+                                     height: 140,
+                                     width: MediaQuery.of(context).size.width*0.43,
+                                     decoration: BoxDecoration(
+                                       color: Color(0xFFBE3FFCF),
+                                       image: DecorationImage(
+                                         image: AssetImage('assets/image/recycling.png'), ///imagine for box 1
+
+                                       ),
+                                       borderRadius: BorderRadius.all(Radius.circular(20)),
+
+                                        ),
+                                   ),
+                                    SizedBox(height: 20,),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        InkWell(
+                                          onTap: (){}, //openCalender 39:50
+                                          child: Container(
+                                            height: 40,
+                                            width: 170,
+                                            decoration: BoxDecoration(
+                                              color: Color(0xFFBE3FFCF),
+                                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                                              border: Border.all(color: Colors.black.withOpacity(0.3)),
+                                            ),
+                                            child: Center(
+                                              child: Text("Report"),
+                                            ),
+                                          ),
+                                         ),
+                                        ],
+                                      ),
                                  ],
                                ),
                               )
-
-                           ],
-                         )
-
+                          //////----REPORT-ENDING--------
+                               ],
+                            ),
                        ],
                     ),
                   ),
-                  ),
-                  
+                  ),     
               ],
-
-            ),
-
-
+              ),
     );
   }
 }
