@@ -11,7 +11,7 @@ Future<void> main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DashBoard(),
+      home: HomePage(),
     ),
   );
 }
@@ -42,12 +42,10 @@ class HomePage extends StatelessWidget {
                 ],
               ),
               Container(
-                height: MediaQuery.of(context).size.height / 3,
-                //decoration: BoxDecoration(
-                // image: DecorationImage(
-                //image: AssetImage('assets/illustration.png')
-                // )
-              ),
+                  height: MediaQuery.of(context).size.height / 3,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('assets/trash.png')))),
               Column(
                 children: <Widget>[
                   MaterialButton(
