@@ -64,7 +64,7 @@ class SignupPage extends StatelessWidget {
                           child: MaterialButton(
                             minWidth: double.infinity,
                             height: 60,
-                            onPressed: () {},
+                            onPressed: () {}, ///Sign up press
                             color: Color(0xFFB2A9C41),
                             elevation: 0,
                             shape: RoundedRectangleBorder(
@@ -74,6 +74,8 @@ class SignupPage extends StatelessWidget {
                               style: TextStyle(
                                   fontWeight: FontWeight.w600, fontSize: 19),
                             ),
+                        
+
                           ),
                           ),
                         ],

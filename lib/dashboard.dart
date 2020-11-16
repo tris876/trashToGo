@@ -56,7 +56,7 @@ class DashBoard extends StatelessWidget {
                                      decoration: BoxDecoration(
                                        color: Color(0xFFBE3FFCF),
                                        image: DecorationImage(
-                                         image: AssetImage('assets/image/recycling.png'), ///imagine for box 1
+                                         image: AssetImage('assets/trash-2.png'), ///imagine for box 1
 
                                        ),
                                        borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -100,7 +100,7 @@ class DashBoard extends StatelessWidget {
                                      decoration: BoxDecoration(
                                        color: Color(0xFFBE3FFCF),
                                        image: DecorationImage(
-                                         image: AssetImage('assets/image/recycling.png'), ///imagine for box 1
+                                         image: AssetImage('assets/file.png'), ///imagine for box 1
 
                                        ),
                                        borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -148,7 +148,7 @@ class DashBoard extends StatelessWidget {
                                                   decoration: BoxDecoration(
                                                     color: Color(0xFFBE3FFCF),
                                                     image: DecorationImage(
-                                                      image: AssetImage(""),
+                                                      image: AssetImage('assets/request.png'),
                                                     ),
                                                         borderRadius: BorderRadius.all(Radius.circular(20)),
                                                     
@@ -191,7 +191,7 @@ class DashBoard extends StatelessWidget {
                                      decoration: BoxDecoration(
                                        color: Color(0xFFBE3FFCF),
                                        image: DecorationImage(
-                                         image: AssetImage('assets/image/recycling.png'), ///imagine for box 1
+                                         image: AssetImage('assets/graphic.png'), ///imagine for box 1
 
                                        ),
                                        borderRadius: BorderRadius.all(Radius.circular(20)),

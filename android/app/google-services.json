@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "185317810813",
-    "firebase_url": "https://trashtogofirebase.firebaseio.com",
-    "project_id": "trashtogofirebase",
-    "storage_bucket": "trashtogofirebase.appspot.com"
+    "project_number": "983516771727",
+    "firebase_url": "https://trashtogofirebase-b0b6a.firebaseio.com",
+    "project_id": "trashtogofirebase-b0b6a",
+    "storage_bucket": "trashtogofirebase-b0b6a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:185317810813:android:786302cecfa47a3ff84714",
+        "mobilesdk_app_id": "1:983516771727:android:e355529c2ef9c53ebf87fa",
         "android_client_info": {
-          "package_name": "com.example.trash_to_go_app"
+          "package_name": "com.trisapp.trash_to_go_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "185317810813-aob2amojrjk5p80p90i7oviuaf12ah99.apps.googleusercontent.com",
+          "client_id": "983516771727-cojas0hf8io9dgdlkccbev10ahqdj3vt.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA4PBvpQCaPyy3vIlO6Iq78WtarJfKuahc"
+          "current_key": "AIzaSyBpVMsXvTEt3wlb5zs1J3F47qlhTBjzLsY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "185317810813-aob2amojrjk5p80p90i7oviuaf12ah99.apps.googleusercontent.com",
+              "client_id": "983516771727-cojas0hf8io9dgdlkccbev10ahqdj3vt.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

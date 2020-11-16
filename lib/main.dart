@@ -1,17 +1,17 @@
-import 'package:firebase_core/firebase_core.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:trash_to_go_app/login.dart';
 import 'package:trash_to_go_app/signup.dart';
-import 'package:trash_to_go_app/dashboard.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DashBoard(),
+      home: HomePage(),
     ),
   );
 }
@@ -36,17 +36,17 @@ class HomePage extends StatelessWidget {
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
                   ),
                   SizedBox(
-                    height: 25,
+                    height: 3,
                   ),
-                  Text("Keep Jamaica Clean!", style: TextStyle(fontSize: 20)),
+                  Text("Keep Jamaica Clean!", style: TextStyle(fontSize: 16)),
                 ],
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
-                //decoration: BoxDecoration(
-                // image: DecorationImage(
-                //image: AssetImage('assets/illustration.png')
-                // )
+                decoration: BoxDecoration(
+                 image: DecorationImage(
+              image: AssetImage('assets/trash.png')
+                 ))
               ),
               Column(
                 children: <Widget>[
