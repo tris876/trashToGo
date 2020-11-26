@@ -1,9 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:trash_to_go_app/Dashboard/request.dart';
+import 'package:trash_to_go_app/dashboard.dart';
+import 'Dashboard/request.dart';
+import 'Dashboard/report.dart';
 import 'package:trash_to_go_app/login.dart';
 import 'package:trash_to_go_app/signup.dart';
-
+import 'Dashboard/info.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,7 +15,7 @@ Future<void> main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Schedule(),
     ),
   );
 }

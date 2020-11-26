@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'Dashboard/Trashtype.dart';
+import 'Dashboard/request.dart';
+import 'Dashboard/report.dart';
+import 'Dashboard/info.dart';
+
  
 class DashBoard extends StatelessWidget {
   @override
@@ -68,7 +73,13 @@ class DashBoard extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         InkWell(
-                                          onTap: (){},
+                                          onTap: (){
+                                            Navigator.push(
+                                              context,
+                                                MaterialPageRoute(
+                                                     builder: (context) => Trashtype()));
+                                            
+                                          },
                                           child: Container(
                                             height: 40,
                                             width: 170,
@@ -112,7 +123,12 @@ class DashBoard extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         InkWell(
-                                          onTap: (){},
+                                          onTap: (){
+                                            Navigator.push(
+                                              context,
+                                                MaterialPageRoute(
+                                                     builder: (context) => Schedule()));
+                                          },
                                           child: Container(
                                             height: 40,
                                             width: 170,
@@ -122,7 +138,7 @@ class DashBoard extends StatelessWidget {
                                               border: Border.all(color: Colors.black.withOpacity(0.3)),
                                             ),
                                             child: Center(
-                                              child: Text("Information Desk"),
+                                              child: Text("Schedule Info"),
                                             ),
                                           ),
                                          ),
@@ -159,7 +175,12 @@ class DashBoard extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         InkWell(
-                                          onTap: (){},
+                                          onTap: (){
+                                            Navigator.push(
+                                              context,
+                                                MaterialPageRoute(
+                                                     builder: (context) => RequestForm()));
+                                          },
                                           child: Container(
                                             height: 40,
                                             width: 170,
@@ -203,7 +224,12 @@ class DashBoard extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         InkWell(
-                                          onTap: (){}, //openCalender 39:50
+                                          onTap: (){
+                                            Navigator.push(
+                                              context,
+                                                MaterialPageRoute(
+                                                     builder: (context) => Report()));
+                                          }, //openCalender 39:50
                                           child: Container(
                                             height: 40,
                                             width: 170,
