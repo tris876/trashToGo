@@ -15,7 +15,7 @@ Future<void> main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Schedule(),
+      home: HomePage(),
     ),
   );
 }
@@ -52,6 +52,8 @@ class HomePage extends StatelessWidget {
               image: AssetImage('assets/trash.png')
                  ))
               ),
+
+          
               Column(
                 children: <Widget>[
                   MaterialButton(
