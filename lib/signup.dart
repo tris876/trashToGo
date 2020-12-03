@@ -6,20 +6,31 @@ class SignupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         resizeToAvoidBottomInset: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFFF2BBEEA),
         appBar: AppBar(
           elevation: 0,
           brightness: Brightness.light,
-          backgroundColor: Colors.white,
+          backgroundColor:  Color(0xFFF001117).withOpacity(0.7),
+          
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.black),
+            icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.white),
           ),
         ),
-        body: SingleChildScrollView(
-          child: Container(
+        body: Stack(
+              fit: StackFit.expand,
+        children: <Widget>[
+          Image.asset('assets/forest2.jpg', fit: BoxFit.cover,),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            color: Color(0xFFF001117).withOpacity(0.7),
+          ),
+
+
+          Container(
             padding: EdgeInsets.symmetric(horizontal: 40),
             height: MediaQuery.of(context).size.height , //-50
             width: double.infinity,
@@ -28,27 +39,27 @@ class SignupPage extends StatelessWidget {
               children: <Widget>[
                 Expanded(
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         children: <Widget>[
                           Text(
                             "Sign up",
                             style: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.bold),
+                                fontSize: 30, fontWeight: FontWeight.bold, color: Colors.white),
                           ),
                           SizedBox(
                             height: 20,
                           ),
                           Text(
                             "Create an account, It's Free!",
-                            style: TextStyle(fontSize: 15, color: Colors.grey[700]),
+                            style: TextStyle(fontSize: 15, color: Colors.white),
                           ),
                         ],
                       ),
                       Column(
                         children: <Widget>[
-                          makeInput(label:"Firstname"), 
+                          makeInput(label:"Firstname",), 
                           makeInput(label:" Last name"),                          
                           
                           makeInput(label:"Password", obscureText:true),
@@ -83,8 +94,8 @@ class SignupPage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget> [
-                          Text("Already have an account?"),
-                          Text("Login ", style: TextStyle(
+                          Text("Already have an account?", style: TextStyle(color: Colors.white)),
+                          Text("Login ", style: TextStyle(color: Colors.white,
                             fontWeight: FontWeight.w400,
                             fontSize:20
 
@@ -98,6 +109,7 @@ class SignupPage extends StatelessWidget {
               ],
             ),
           ),
+        ],
         )
         );
   }
@@ -109,9 +121,9 @@ class SignupPage extends StatelessWidget {
         Text(
           label,
           style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w500,
-            color: Colors.black87
+            fontSize: 17,
+            fontWeight: FontWeight.w400,
+            color: Colors.white
           ),
         ),
         SizedBox(height: 2,),

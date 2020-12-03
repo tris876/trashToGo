@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'Dashboard/Trashtype.dart';
-import 'Dashboard/request.dart';
-import 'Dashboard/report.dart';
-import 'Dashboard/info.dart';
+import 'Trashtype.dart';
+import 'request.dart';
+import 'report.dart';
+import 'info.dart';
 
  
 class DashBoard extends StatelessWidget {
@@ -11,23 +11,7 @@ class DashBoard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFFBE3FFCF),
      
-  appBar: AppBar(
-         
-          elevation: 0,
-          title: Text("DashBoard", style: TextStyle(
-            color: Colors.black,
-            fontWeight: FontWeight.w700
-          ),
-          ),
-          brightness: Brightness.light,
-          backgroundColor: Color(0xFFBE3FFCF),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.black),
-          ),
-        ),
+
 
             body: Column(
               children: [
@@ -36,8 +20,8 @@ class DashBoard extends StatelessWidget {
                     width: MediaQuery.of(context).size.width,
                     padding: EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(topLeft: Radius.circular(40), 
-                      topRight: Radius.circular(40)),
+                     
+                      
                       color: Colors.white
                     ),
                     child: Column(
@@ -61,7 +45,7 @@ class DashBoard extends StatelessWidget {
                                      decoration: BoxDecoration(
                                        color: Color(0xFFBE3FFCF),
                                        image: DecorationImage(
-                                         image: AssetImage('assets/trash-2.png'), ///imagine for box 1
+                                         image: AssetImage('assets/dump.png'), ///imagine for box 1
 
                                        ),
                                        borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -111,7 +95,7 @@ class DashBoard extends StatelessWidget {
                                      decoration: BoxDecoration(
                                        color: Color(0xFFBE3FFCF),
                                        image: DecorationImage(
-                                         image: AssetImage('assets/file.png'), ///imagine for box 1
+                                         image: AssetImage('assets/inform.png'), ///imagine for box 1
 
                                        ),
                                        borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -138,7 +122,7 @@ class DashBoard extends StatelessWidget {
                                               border: Border.all(color: Colors.black.withOpacity(0.3)),
                                             ),
                                             child: Center(
-                                              child: Text("Schedule Info"),
+                                              child: Text("Information Desk"),
                                             ),
                                           ),
                                          ),
@@ -164,7 +148,7 @@ class DashBoard extends StatelessWidget {
                                                   decoration: BoxDecoration(
                                                     color: Color(0xFFBE3FFCF),
                                                     image: DecorationImage(
-                                                      image: AssetImage('assets/request.png'),
+                                                      image: AssetImage('assets/requestf.png'),
                                                     ),
                                                         borderRadius: BorderRadius.all(Radius.circular(20)),
                                                     
@@ -212,7 +196,7 @@ class DashBoard extends StatelessWidget {
                                      decoration: BoxDecoration(
                                        color: Color(0xFFBE3FFCF),
                                        image: DecorationImage(
-                                         image: AssetImage('assets/graphic.png'), ///imagine for box 1
+                                         image: AssetImage('assets/analysis.png'), ///imagine for box 1
 
                                        ),
                                        borderRadius: BorderRadius.all(Radius.circular(20)),

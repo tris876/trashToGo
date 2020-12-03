@@ -1,13 +1,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:trash_to_go_app/Dashboard/request.dart';
-import 'package:trash_to_go_app/dashboard.dart';
-import 'Dashboard/request.dart';
-import 'Dashboard/report.dart';
+import 'package:trash_to_go_app/HomeButton/tips.dart';
+import 'package:trash_to_go_app/HomeButton/dash.dart';
+
 import 'package:trash_to_go_app/login.dart';
 import 'package:trash_to_go_app/signup.dart';
-import 'Dashboard/info.dart';
+import 'package:trash_to_go_app/HomeButton/dash.dart';
+
+
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +17,7 @@ Future<void> main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Dashapp(),
     ),
   );
 }
@@ -24,37 +26,46 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Container(
+      body: Stack(
+       fit: StackFit.expand,
+        children: <Widget>[
+          Image.asset('assets/Green.png', fit: BoxFit.cover,),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            color: Color(0xFFF001117).withOpacity(0.7),
+          ),
+        
+        Container(
           width: double.infinity,
           height: MediaQuery.of(context).size.height,
-          padding: EdgeInsets.symmetric(horizontal: 40, vertical: 80),
+          padding: EdgeInsets.symmetric(horizontal: 50 ,vertical: 80),
+         
           child: Column(
-            //mainAxisAligment: MainAxisAligment.spacebetween,
-            //crossAxisAligment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Column(
+                
                 children: <Widget>[
-                  Text(
-                    "Trash to Go ",
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
+                  
+                  Center(
+                    child: Text(
+                      "Trash to Go ",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50, color: Colors.white),
+                    ),
                   ),
                   SizedBox(
                     height: 3,
                   ),
-                  Text("Keep Jamaica Clean!", style: TextStyle(fontSize: 16)),
+                  Text("Keep Jamaica Clean!", style: TextStyle(fontSize: 20, color: Colors.white)),
                 ],
               ),
-              Container(
-                height: MediaQuery.of(context).size.height / 3,
-                decoration: BoxDecoration(
-                 image: DecorationImage(
-              image: AssetImage('assets/trash.png')
-                 ))
-              ),
+              
 
-          
+
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   MaterialButton(
                     minWidth: double.infinity,
@@ -63,6 +74,7 @@ class HomePage extends StatelessWidget {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => LoginPage()));
                     },
+                    color: Colors.white54,
                     shape: RoundedRectangleBorder(
                         side: BorderSide(color: Colors.black),
                         borderRadius: BorderRadius.circular(50)),
@@ -74,6 +86,7 @@ class HomePage extends StatelessWidget {
                     height: 20,
                   ),
                   Container(
+                    
                     padding: EdgeInsets.only(top: 3, left: 3),
                     child: MaterialButton(
                       minWidth: double.infinity,
@@ -100,7 +113,8 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
-      ),
+        ],
+        ),
     );
   }
 }

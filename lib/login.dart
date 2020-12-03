@@ -6,19 +6,32 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         resizeToAvoidBottomInset: false,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFFF1FC88D),
         appBar: AppBar(
           elevation: 0,
           brightness: Brightness.light,
-          backgroundColor: Colors.white,
+          backgroundColor: Color(0xFFF001117).withOpacity(0.3),
+          
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
             },
-            icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.black),
+            icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.white),
           ),
         ),
-        body: Container(
+
+
+        body: Stack(
+       fit: StackFit.expand,
+        children: <Widget>[
+          Image.asset('assets/forest.jpg', fit: BoxFit.cover,),
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            color: Color(0xFFF001117).withOpacity(0.3),
+          ),
+        
+         Container(
           height: MediaQuery.of(context).size.height,
           width: double.infinity,
           child: Column(
@@ -33,14 +46,14 @@ class LoginPage extends StatelessWidget {
                         Text(
                           "Login",
                           style: TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.bold),
+                              fontSize: 30, fontWeight: FontWeight.bold,color: Colors.white),
                         ),
                         SizedBox(
                           height: 20,
                         ),
                         Text(
                           "Login into your account",
-                          style: TextStyle(fontSize: 15, color: Colors.grey[700]),
+                          style: TextStyle(fontSize: 15, color: Colors.white),
                         ),
                       ],
                     ),
@@ -69,7 +82,7 @@ class LoginPage extends StatelessWidget {
                         child: Text(
                           "Login",
                           style: TextStyle(
-                              fontWeight: FontWeight.w600, fontSize: 19),
+                              fontWeight: FontWeight.w600, fontSize: 19, color: Colors.white),
                         ),
                       ),
                     ),
@@ -77,11 +90,11 @@ class LoginPage extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget> [
-                        Text("Don't have an account?"),
+                        Text("Don't have an account?", style: TextStyle(color: Colors.white),),
                         Text("Sign up", style: TextStyle(
                           fontWeight: FontWeight.w600,
-                          fontSize:20
-
+                          fontSize:20,
+                          color: Colors.white
                         ),)
                       ],
                     )
@@ -98,7 +111,10 @@ class LoginPage extends StatelessWidget {
              // )
             ],
           ),
-        ));
+        ),
+        ],
+        )
+        );
   }
 
   Widget makeInput({label, obscureText = false}) {
