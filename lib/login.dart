@@ -25,12 +25,7 @@ class _LoginPageState extends State<LoginPage> {
           elevation: 0,
           brightness: Brightness.light,
           backgroundColor: Color(0xFFF001117).withOpacity(0.3),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.white),
-          ),
+          leading: Text(""),
         ),
         body: Stack(
           fit: StackFit.expand,

@@ -21,12 +21,7 @@ class _SignupPageState extends State<SignupPage> {
           elevation: 0,
           brightness: Brightness.light,
           backgroundColor: Color(0xFFF001117).withOpacity(0.7),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.white),
-          ),
+          leading: Text(""),
         ),
         body: Stack(
           fit: StackFit.expand,
@@ -134,9 +129,6 @@ class _SignupPageState extends State<SignupPage> {
                                           borderSide: BorderSide(
                                               color: Colors.grey[400])),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: 30,
                                   ),
                                 ],
                               ),
