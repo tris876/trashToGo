@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "486673033536",
+    "project_id": "advance-71471",
+    "storage_bucket": "advance-71471.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486673033536:android:b60aa76d64ee05445372a5",
+        "android_client_info": {
+          "package_name": "com.trisapp.trash_to_go_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486673033536-0h4m461hl5ekbigkjljp2k7q63q37a32.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9gSuia8squsrWxpCgn3V-dgErZuovdUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486673033536-0h4m461hl5ekbigkjljp2k7q63q37a32.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
