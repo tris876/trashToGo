@@ -11,7 +11,7 @@ class Report extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        backgroundColor: Color(0xFFBE3FFCF),
+        backgroundColor: Color(0xFFB2A9C41),
       ),
       home: Reportside(title: 'Report Dashboard 2020'),
     );
@@ -35,11 +35,10 @@ class _ReportsideState extends State<Reportside> {
     new CircularStackEntry(
       <CircularSegmentEntry>[
         new CircularSegmentEntry(700.0, Color(0xff4285F4), rankKey: 'Q1'),
-        new CircularSegmentEntry(1000.0, Color(0xfff3af00), rankKey: 'Q2'),
-        new CircularSegmentEntry(1800.0, Color(0xffec3337), rankKey: 'Q3'),
-        new CircularSegmentEntry(1000.0, Color(0xff40b24b), rankKey: 'Q4'),
+        new CircularSegmentEntry(300.0, Color(0xfff3af00), rankKey: 'Q2'),
+ 
       ],
-      rankKey: 'Quarterly Profits',
+      rankKey: 'Collection Rate',
     ),
   ];
 
@@ -137,7 +136,7 @@ class _ReportsideState extends State<Reportside> {
     );
   }
 
-  Material mychart1Items(String title, String priceVal, String subtitle) {
+  Material mychart1Items(String title) {
     return Material(
       color: Colors.white,
       elevation: 14.0,
@@ -162,25 +161,11 @@ class _ReportsideState extends State<Reportside> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(1.0),
-                    child: Text(
-                      priceVal,
-                      style: TextStyle(
-                        fontSize: 30.0,
-                      ),
-                    ),
+                    Padding(
+                    padding: EdgeInsets.all(5.0),
+                    
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(1.0),
-                    child: Text(
-                      subtitle,
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.blueGrey,
-                      ),
-                    ),
-                  ),
+                 
                   Padding(
                     padding: EdgeInsets.all(1.0),
                     child: new Sparkline(
@@ -199,7 +184,7 @@ class _ReportsideState extends State<Reportside> {
     );
   }
 
-  Material mychart2Items(String title, String priceVal, String subtitle) {
+  Material mychart2Items(String title) {
     return Material(
       color: Colors.white,
       elevation: 14.0,
@@ -224,24 +209,10 @@ class _ReportsideState extends State<Reportside> {
                       ),
                     ),
                   ),
+                  
                   Padding(
-                    padding: EdgeInsets.all(1.0),
-                    child: Text(
-                      priceVal,
-                      style: TextStyle(
-                        fontSize: 30.0,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(1.0),
-                    child: Text(
-                      subtitle,
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.blueGrey,
-                      ),
-                    ),
+                    padding: EdgeInsets.all(5.0),
+                    
                   ),
                   Padding(
                     padding: EdgeInsets.all(1.0),
@@ -268,6 +239,7 @@ class _ReportsideState extends State<Reportside> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFFB2A9C41),
         leading: IconButton(
           onPressed: () {
             Navigator.push(
@@ -278,7 +250,7 @@ class _ReportsideState extends State<Reportside> {
         title: Text(widget.title),
       ),
       body: Container(
-        color: Color(0xFFBE3FFCF),
+        color: Color(0xFFB2A9C41),
         child: StaggeredGridView.count(
           crossAxisCount: 4,
           crossAxisSpacing: 12.0,
@@ -287,23 +259,23 @@ class _ReportsideState extends State<Reportside> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child:
-                  mychart1Items("Sales by Month", "421.3M", "+12.9% of target"),
+                  mychart1Items("Collection Statistic"),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: myCircularItems("Quarterly Profits", "68.7M"),
+              child: myCircularItems("Pickup Accuracy", "70%"),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 8.0),
-              child: myTextItems("Mktg. Spend", "48.6M"),
+              child: myTextItems("NSWMA Trucks", "85"),
             ),
             Padding(
               padding: const EdgeInsets.only(right: 8.0),
-              child: myTextItems("Users", "25.5M"),
+              child: myTextItems("Employees", "4,241"),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: mychart2Items("Conversion", "0.9M", "+19% of target"),
+              child: mychart2Items("Performance over 5 years"),
             ),
           ],
           staggeredTiles: [

@@ -8,6 +8,8 @@ import 'package:trash_to_go_app/HomeButton/dash.dart';
 import 'package:trash_to_go_app/login.dart';
 import 'package:trash_to_go_app/signup.dart';
 import 'package:trash_to_go_app/HomeButton/dash.dart';
+import 'Dashboard/Information.dart';
+import 'HomeButton/dash.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,10 +23,10 @@ Future<void> main() async {
 }
 
 _checkAuth() {
-  var user = FirebaseAuth.instance.currentUser;
+var user = FirebaseAuth.instance.currentUser;
   if (user != null) {
     //user is logged in
-    return Dashapp();
+   return Dashapp();
   }
   return LoginPage();
 }

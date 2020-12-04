@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:trash_to_go_app/login.dart';
 import 'package:trash_to_go_app/main.dart';
+import 'package:trash_to_go_app/HomeButton/dash.dart';
 
 class SignupPage extends StatefulWidget {
   @override
@@ -21,7 +22,13 @@ class _SignupPageState extends State<SignupPage> {
           elevation: 0,
           brightness: Brightness.light,
           backgroundColor: Color(0xFFF001117).withOpacity(0.7),
-          leading: Text(""),
+          leading:IconButton(
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Dashapp()));
+          },
+          icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.black),
+        ),
         ),
         body: Stack(
           fit: StackFit.expand,

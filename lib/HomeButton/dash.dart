@@ -2,9 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:trash_to_go_app/login.dart';
-import '../Dashboard/info.dart';
+import '../Dashboard/Schedule.dart';
 import 'tips.dart';
 import '../Dashboard/dashboard.dart';
+import 'Schedule1.dart';
 
 class Dashapp extends StatefulWidget {
   @override
@@ -15,8 +16,7 @@ class _DashappState extends State<Dashapp> {
   int _selectedIndex = 0;
   static List<Widget> _wigetOption = <Widget>[
     DashBoard(),
-    Center(child: Text('Search')),
-    Schedule(),
+    Schedule1(),
     TipsCorner(),
   ];
 
@@ -89,10 +89,7 @@ class _DashappState extends State<Dashapp> {
             icon: FaIcon(FontAwesomeIcons.trashRestore),
             title: Text(""),
           ),
-          BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.search),
-            title: Text(" "),
-          ),
+       
           BottomNavigationBarItem(
             icon: FaIcon(FontAwesomeIcons.clock),
             title: Text(""),

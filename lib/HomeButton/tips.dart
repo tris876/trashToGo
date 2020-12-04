@@ -11,12 +11,12 @@ class TipsCorner extends StatefulWidget {
 class _TipsCornerState extends State<TipsCorner> {
   final double _borderRadius = 24;
   var items = [
-    TrashInfo('trash1', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'Description'),
-    TrashInfo('trash2', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'bs'),
-    TrashInfo('trash3', Color(0xFFB2A9C41), Color(0xFFFC4F0AD), 'Desdjenon'),
-    TrashInfo('trash1', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'Description'),
-    TrashInfo('trash2', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'Destion'),
-    TrashInfo('trash3', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'Description'),
+    TrashInfo('Recycling at HOME', Color(0xFFB2A9C41), Color(0xFFFC4F0AD), 'All plastic bottles can be recycled, from water bottles to salad dressing, so pull all of them in a recycling container.'),
+    TrashInfo('', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'Wrapping Paper, envelopes, birthday cards and phone books. All sort of cardboard can be recycled including toilet and paper tubers.'),
+    TrashInfo('Recycling at SCHOOL', Color(0xFFB2A9C41), Color(0xFFFC4F0AD), 'Every classroom, eating space and office should have plently of bins available for recycling paper.'),
+    TrashInfo('', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'Use special fundraisers for your school that promote recycling, such as selling customized reusable bags.'),
+    TrashInfo('Recycling at WORK', Color(0xFFB2A9C41), Color(0xFFFC4F0AD), 'Bring your own lunch and snacks to the office in a reusable container you will reduce packaging waste and also spend less on eating out.'),
+    TrashInfo('', Color(0xFF9FBF8E), Color(0xFFFC4F0AD), 'Make your commute green. By carpooling, walking or using public transportation hence will reduce gas emissions by 1/3.'),
   ];
 
   @override

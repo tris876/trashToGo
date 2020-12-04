@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'Trashtype.dart';
 import 'request.dart';
 import 'report.dart';
-import 'info.dart';
+import 'Schedule.dart';
+import 'Information.dart';
+
 
  
 class DashBoard extends StatelessWidget {
@@ -111,7 +113,7 @@ class DashBoard extends StatelessWidget {
                                             Navigator.push(
                                               context,
                                                 MaterialPageRoute(
-                                                     builder: (context) => Schedule()));
+                                                     builder: (context) => GettingStartedScreen()));
                                           },
                                           child: Container(
                                             height: 40,
