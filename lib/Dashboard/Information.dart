@@ -8,6 +8,7 @@ import 'package:trash_to_go_app/HomeButton/dash.dart';
 
 
 
+
 class GettingStartedScreen extends StatefulWidget {
   @override
   _GettingStartedScreenState createState() => _GettingStartedScreenState();
