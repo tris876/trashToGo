@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:trash_to_go_app/login.dart';
+import 'package:trash_to_go_app/MainApp/login.dart';
 import 'package:trash_to_go_app/main.dart';
 import 'package:trash_to_go_app/HomeButton/dash.dart';
 
@@ -25,7 +25,7 @@ class _SignupPageState extends State<SignupPage> {
           leading:IconButton(
           onPressed: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Dashapp()));
+                context, MaterialPageRoute(builder: (context) => HomePage()));
           },
           icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.black),
         ),
@@ -42,8 +42,8 @@ class _SignupPageState extends State<SignupPage> {
               height: MediaQuery.of(context).size.height,
               color: Color(0xFFF001117).withOpacity(0.7),
             ),
-            SingleChildScrollView(
-              child: Container(
+            //SingleChildScrollView(
+             /*child:*/ Container(
                 padding: EdgeInsets.symmetric(horizontal: 40),
                 height: MediaQuery.of(context).size.height, //-50
                 width: double.infinity,
@@ -196,7 +196,7 @@ class _SignupPageState extends State<SignupPage> {
                   ],
                 ),
               ),
-            ),
+            //),
           ],
         ));
   }

@@ -1,11 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:trash_to_go_app/login.dart';
-import '../Dashboard/Schedule.dart';
+import 'package:trash_to_go_app/MainApp/login.dart';
+
 import 'tips.dart';
-import '../Dashboard/dashboard.dart';
+
 import 'Schedule1.dart';
+import 'package:trash_to_go_app/MainApp/New-Dash.dart';
 
 class Dashapp extends StatefulWidget {
   @override
@@ -44,7 +45,7 @@ class _DashappState extends State<Dashapp> {
         children: _wigetOption,
       ),
       appBar: AppBar(
-        title: Text("DashBoard"),
+        title: Text(""),
         centerTitle: true,
         backgroundColor: Color(0xFFB2A9C41),
       ),

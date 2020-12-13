@@ -1,9 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:trash_to_go_app/Dashboard/dashboard.dart';
 import 'package:trash_to_go_app/HomeButton/dash.dart';
 import 'package:trash_to_go_app/main.dart';
-import 'package:trash_to_go_app/signup.dart';
+import 'package:trash_to_go_app/MainApp/signup.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -24,8 +23,14 @@ class _LoginPageState extends State<LoginPage> {
         appBar: AppBar(
           elevation: 0,
           brightness: Brightness.light,
-          backgroundColor: Color(0xFFF001117).withOpacity(0.3),
-          leading: Text(""),
+          backgroundColor: Color(0xFFF001117).withOpacity(0.4),
+          leading:IconButton(
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
+          },
+          icon: Icon(Icons.arrow_back_ios, size: 20, color: Colors.black),
+        ),
         ),
         body: Stack(
           fit: StackFit.expand,
@@ -37,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
-              color: Color(0xFFF001117).withOpacity(0.3),
+              color: Color(0xFFF001117).withOpacity(0.4),
             ),
             Container(
               height: MediaQuery.of(context).size.height,
@@ -111,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
                                   Text(
-                                    "Paaword",
+                                    "Password",
                                     style: TextStyle(
                                         fontSize: 15,
                                         fontWeight: FontWeight.w500,

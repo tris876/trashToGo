@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trash_to_go_app/Dashboard/dashboard.dart';
+
 
 class Schedule extends StatefulWidget {
   @override

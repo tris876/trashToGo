@@ -27,7 +27,7 @@ dependencies:
   firebase_core: ^0.5.3
   firebase_auth: ^0.18.4
   flutter_downloader: ^1.5.2
- 
+  flutter_svg: ^0.19.0
 
   
 
@@ -53,9 +53,6 @@ flutter:
 
   
   assets: 
-    - assets/dump.png
-    - assets/requestf.png
-    - assets/inform.png
     - assets/analysis.png
     - assets/Green.png
     - assets/forest.jpg
@@ -65,6 +62,14 @@ flutter:
     - assets/metal.png
     - assets/trash-bin.png
     - assets/recycle.png
+    - assets/dumpcan.png
+    - assets/infodesk.png
+    - assets/graph.png
+    - assets/requestt.png
+    - assets/green-tea.png
+    - assets/search.svg
+    - assets/personal.png
+
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

@@ -2,15 +2,12 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:trash_to_go_app/Dashboard/Trashtype.dart';
-import 'package:trash_to_go_app/HomeButton/tips.dart';
 import 'package:trash_to_go_app/HomeButton/dash.dart';
 
-import 'package:trash_to_go_app/login.dart';
-import 'package:trash_to_go_app/signup.dart';
-import 'package:trash_to_go_app/HomeButton/dash.dart';
-import 'Dashboard/Information.dart';
-import 'HomeButton/Schedule1.dart';
+import 'package:trash_to_go_app/MainApp/login.dart';
+import 'package:trash_to_go_app/MainApp/signup.dart';
+
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -18,19 +15,19 @@ Future<void> main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Trashtype(),
+      home: HomePage(),
     ),
   );
 }
 
-//_checkAuth() {
-//var user = FirebaseAuth.instance.currentUser;
-  //if (user != null) {
+_checkAuth() {
+var user = FirebaseAuth.instance.currentUser;
+  if (user != null) {
     //user is logged in
-  // return Dashapp();
- // }
-  //return LoginPage();
-//}
+   return Dashapp();
+  }
+  return LoginPage();
+}
 
 class HomePage extends StatelessWidget {
   @override
